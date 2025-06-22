@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svarga Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-KfNh0Vx0ixn8k3n9cvk4zWvhgkGg7PpKCyRv3eoxzN1TZr2EbW4MnO7pjDRdKZ5rg3xLU3JY3PbNVqX1bBG2Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      line-height: 1.6;
+    }
+
+    .footer-section {
+      background: linear-gradient(135deg, #0f0707 0%, #1a0f0f 100%);
+      padding: 60px 0 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 50px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand h2 {
+      color: #ff944d;
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .footer-brand p {
+      color: #cccccc;
+      margin-bottom: 15px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      width: 45px;
+      height: 45px;
+      background: rgba(255, 148, 77, 0.1);
+      border: 2px solid #ff944d;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ff944d;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 20px;
+    }
+
+    .social-links a:hover {
+      background: #ff944d;
+      color: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    .available-on {
+      margin-top: 15px;
+    }
+
+    .available-on p {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .available-on img {
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .footer-contact h4 {
+      color: #ffffff;
+      font-size: 20px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+      color: #cccccc;
+    }
+
+    .contact-item i {
+      color: #ff944d;
+      min-width: 20px;
+    }
+
+    .footer-map iframe {
+      width: 100%;
+      height: 220px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-bottom p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        text-align: center;
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+
+      .footer-map iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <footer class="footer-section" id="Contak">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Kolom 1 -->
+        <div class="footer-brand">
+          <h2>SVARGA</h2>
+          <p>Dimsum premium dengan cita rasa autentik yang tak terlupakan</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/svarga.foodies/"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6285213963005"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="available-on">
+            <p>Tersedia juga di:</p>
+            <img src="img/gofood.png" alt="GoFood">
+            <img src="img/shopeefood.png" alt="ShopeeFood">
+            <img src="img/grabfood.png" alt="GrabFood">
+          </div>
+          <div class="available-on">
+            <p>Didukung oleh:</p>
+            <img src="img/sponsor.jpg" alt="Sponsor" height="35">
+          </div>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+62 852-1396-3005</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@svargadimsum.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Jl. Raya Abdul Gani No.2 Blok B, Jatimulya, Depok</span>
+          </div>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div class="footer-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Svarga Dimsum. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
